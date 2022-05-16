@@ -1,0 +1,23 @@
+import java.util.*;
+public class ArrayQuestion2 {
+	static void kthSmallest(Integer a[], int k){
+		Arrays.sort(a);
+		System.out.println(a[k-1]);
+	}
+	static void kthLargest(Integer a[], int l) {
+		Arrays.sort(a,Collections.reverseOrder());
+		System.out.println(a[l-1]);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Integer a[] = {22,11,9,7,16};
+		int k = 2;
+		int l = 3;
+		 kthSmallest(a,k);
+		 kthLargest(a,l);
+
+	}
+
+}
